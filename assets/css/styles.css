@@ -1,0 +1,43 @@
+/* This sets the page to have no padding and margins by default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* This sets all links to look like normal text */
+a {
+    text-decoration: none;
+    color: unset;
+}
+/* Setting up the main colors for my portfolio */
+:root {
+    --primary-color: #144013;
+    --secondary-color: #2e4140;
+    --tertiary-color: #98b4b2;
+    --back-color: rgba(190,169,149,.3);
+}
+body {
+    background: var(--back-color);
+}
+header {
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header h1 {
+    margin-top: 10px;
+}
+header nav {
+    padding: 10px 0;
+    width: 100%;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+header nav a {
+    padding: 0 10px;
+}

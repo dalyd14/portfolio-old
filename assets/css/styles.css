@@ -53,7 +53,15 @@ header nav a {
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-
+    position: relative;
+    overflow: hidden;
+}
+    /* This span stlye was added so that the page navigation will stop early so that the 
+    sticky header will not cover the section title reference: https://stackoverflow.com/questions/25201608/link-jump-to-id-100px */
+.section-container span {
+    position: absolute;
+    top: -90px;
+    visibility: hidden;
 }
 .section-title {
     color: var(--primary-color);
@@ -90,4 +98,27 @@ header nav a {
     width: 47%;
     height: 100px;
     max-width: 200px;
+}
+/* CONTACT ME SECTION */
+.contact-list-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.contact-list-grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.contact-grid-item {
+    padding: 15px;
+}
+.contact-grid-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-grid-item img {
+    height: 20px;
 }

@@ -26,7 +26,10 @@
             </ul>
         </nav>
     </header>
-    <section class="section-container" id="about-me">
+    <section class="section-container">
+        <!-- This span was added so that the page navigation will stop early so that the 
+        sticky header will not cover the section title reference: https://stackoverflow.com/questions/25201608/link-jump-to-id-100px -->
+        <span id="about-me"></span>
         <div class="section-title">
             <h2>About Me</h2>
         </div>
@@ -40,7 +43,10 @@
         </div>
 
     </section>
-    <section class="section-container" id="my-works">
+    <section class="section-container">
+        <!-- This span was added so that the page navigation will stop early so that the 
+        sticky header will not cover the section title reference: https://stackoverflow.com/questions/25201608/link-jump-to-id-100px -->
+        <span id="my-works"></span>
         <div class="section-title">
             <h2>My Works</h2>
         </div>
@@ -67,19 +73,43 @@
             </div>
         </div>
     </section>
-    <section class="section-container" id="contact-me">
+    <section class="section-container">
+        <!-- This span was added so that the page navigation will stop early so that the 
+        sticky header will not cover the section title reference: https://stackoverflow.com/questions/25201608/link-jump-to-id-100px -->
+        <span id="contact-me"></span>
         <div class="section-title">
             <h2>Contact Me</h2>
         </div>
         <div class="section-content">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Voluptates repellendus facere temporibus labore consequuntur laborum 
-                ipsum ipsam veritatis sunt, libero, excepturi tempore alias omnis. 
-                Doloribus iure dolorum sit dolor. Officia.
-            </p>
+            <div class="contact-list-grid-wrapper">
+                <div class="contact-list-grid-container">
+                    <div class="contact-grid-item">
+                        <a href="tel:+1610-675-8519">
+                            <img src="./assets/images/phone-icon.png" alt="Phone Icon, click to call David">
+                            (610) 675-8519                            
+                        </a>
+                    </div>
+                    <div class="contact-grid-item">
+                        <a href="mailto:dalyd14@gmail.com">
+                            <img src="./assets/images/email-icon.png" alt="Email Icon, click to send David an email">
+                            dalyd14@gmail.com                            
+                        </a>                        
+                    </div>
+                    <div class="contact-grid-item">
+                        <a href="https://github.com/dalyd14">
+                            <img src="./assets/images/GitHub-Mark-64px.png" alt="GitHub Icon, click to visit David's GitHub Page">
+                            GitHub                            
+                        </a>                        
+                    </div>
+                    <div class="contact-grid-item">
+                        <a href="https://www.linkedin.com/in/david-daly-a627a2b5">
+                            <img src="./assets/images/LI-In-Bug.png" alt="LinkedIn Icon, click to visit David's LinkedIn Page">
+                            LinkedIn                            
+                        </a>                        
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
     <footer>
         

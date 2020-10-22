@@ -22,20 +22,21 @@ body {
 /* HEADER SECTION */
 header {
     background: var(--tertiary-color);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     display: flex;
     align-items: center;
     flex-direction: column;
     position: sticky;
     top: 0px;
     z-index: 9999;
-    border-bottom: 5px solid var(--secondary-color);
+    border-bottom: 3px solid var(--primary-color);
 }
 header h1 {
     margin-top: 10px;
+    font-size: 36px;
 }
 header nav {
-    padding: 10px 0 5px 0;
+    padding: 10px 0;
     width: 100%;
 }
 header nav ul {
@@ -44,7 +45,12 @@ header nav ul {
     justify-content: space-around;
 }
 header nav a {
-    padding: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+header nav a:active {
+    border-radius: 8px;
+    background: rgba(190,169,149,.8);
 }
 /* GENERAL CONTENT SECTION */
 /* This section is used to apply styles to all of the sections in this portfolio */
@@ -69,11 +75,20 @@ header nav a {
     width: 50%;
     text-align: center;
 }
+.section-title h2 {
+    font-size: 36px;
+}
 .section-content {
     padding: 10px 20px;
+    color: var(--secondary-color);
+}
+.section-content h3 {
+    font-size: 20px;
 }
 /* ABOUT ME SECTION */
-
+.section-content p {
+    text-align: justify;
+}
 /* MY WORKS SECTION */
 .works-display {
     display: flex;
@@ -108,7 +123,7 @@ header nav a {
 .contact-list-grid-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 1fr);
 }
 .contact-grid-item {
@@ -118,7 +133,12 @@ header nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px hidden var(--primary-color);
+}
+.contact-grid-item:active {
+    border-radius: 8px;
+    background: rgba(190,169,149,.8);
 }
 .contact-grid-item img {
-    height: 20px;
+    height: 50px;
 }

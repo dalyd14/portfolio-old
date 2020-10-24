@@ -53,6 +53,7 @@ header nav li {
     flex: 1;
     background-color: inherit;
     transition: background-color 1s;
+    position: relative;
 }
 header nav a {
     margin: 5px 0;

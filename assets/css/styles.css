@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Garamond",serif;
 }
 /* This sets all links to look like normal text */
 a {
@@ -13,15 +14,16 @@ a {
 :root {
     --primary-color: #144013;
     --secondary-color: #2e4140;
-    --tertiary-color: #98b4b2;
-    --back-color: rgba(190,169,149,.3);
+    --tertiary-color: rgba(152, 180, 178, 0.3);
+    --back-color: #e1e9ee;
+    --clicked-color: lightgray;
 }
 body {
     background: var(--back-color);
 }
 /* HEADER SECTION */
 header {
-    background: var(--tertiary-color);
+    background: var(--back-color);
     color: var(--primary-color);
     display: flex;
     align-items: center;
@@ -29,11 +31,12 @@ header {
     position: sticky;
     top: 0px;
     z-index: 9999;
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
 }
 header h1 {
     margin-top: 10px;
     font-size: 36px;
+    font-weight: 100;
 }
 header nav {
     padding: 10px 0;
@@ -45,12 +48,18 @@ header nav ul {
     justify-content: space-around;
 }
 header nav a {
-    padding: 10px;
+    padding: 5px;
+    margin: 5px;
     font-size: 16px;
+    background: none;
+    border-radius: 8px;
+    transition: background 1s;
 }
 header nav a:active {
-    border-radius: 8px;
-    background: rgba(190,169,149,.8);
+    background: var(--clicked-color);
+}
+header nav a:hover {
+    background: var(--clicked-color);
 }
 /* GENERAL CONTENT SECTION */
 /* This section is used to apply styles to all of the sections in this portfolio */
@@ -58,9 +67,12 @@ header nav a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
     position: relative;
     overflow: hidden;
+    background-color: white;
+}
+.section-container:not(:first-of-type) {
+    margin-top: 10px;
 }
     /* This span stlye was added so that the page navigation will stop early so that the 
     sticky header will not cover the section title reference: https://stackoverflow.com/questions/25201608/link-jump-to-id-100px */
@@ -71,48 +83,72 @@ header nav a:active {
 }
 .section-title {
     color: var(--primary-color);
-    border-bottom: 3px solid var(--primary-color);
-    width: 50%;
+    border-bottom: 1px solid var(--primary-color);
+    width: 75%;
     text-align: center;
 }
 .section-title h2 {
     font-size: 36px;
+    font-weight: 100;
 }
 .section-content {
     padding: 10px 20px;
     color: var(--secondary-color);
+    width: 100%;
 }
 .section-content h3 {
     font-size: 20px;
+    font-weight: 100;
 }
 /* ABOUT ME SECTION */
 .section-content p {
     text-align: justify;
 }
 /* MY WORKS SECTION */
-.works-display {
+.works-display-wrapper {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+}
+.bc-works-display {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 25px);
+    grid-gap: 5px;
+    width: 100%;
+}
+.pers-works-display {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 25px);
+    grid-gap: 5px;
+    width: 100%;
 }
 .all-work{
     border: 2px solid var(--secondary-color);
     background: var(--tertiary-color);
-    margin: 10px 0 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.primary-work {
-    width: 100%;
-    height: 200px;
-    max-width: 400px;
+.bc-primary-work {
+    grid-row: 1 / span 6;
+    grid-column: 1 / span 12;
 }
-.other-work {
-    width: 47%;
-    height: 100px;
-    max-width: 200px;
+.pers-primary-work {
+    grid-row: 1 / span 4;
+    grid-column: 1 / span 6;
+}
+.bc-other-work {
+    grid-row: span 3;
+    grid-column: span 4;
+}
+.pers-other-work {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.work-1 {
+    background-image: url("../images/run-buddy.jpg");
+    background-size: cover;
 }
 /* CONTACT ME SECTION */
 .contact-list-grid-wrapper {
@@ -127,17 +163,24 @@ header nav a:active {
     grid-template-rows: repeat(2, 1fr);
 }
 .contact-grid-item {
-    padding: 15px;
+    padding: 9px;
+    margin: 6px;
+    border: 1px solid var(--clicked-color);
+    background: white;
+    box-shadow: 2px 2px 3px lightgrey;
 }
 .contact-grid-item a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px hidden var(--primary-color);
+    font-size: 14px;
+    margin: 0 8px;
+}
+.contact-grid-item:hover {
+    background: var(--clicked-color);
 }
 .contact-grid-item:active {
-    border-radius: 8px;
-    background: rgba(190,169,149,.8);
+    background: var(--clicked-color);
 }
 .contact-grid-item img {
     height: 50px;

@@ -74,6 +74,9 @@ header nav a:hover {
 .section-container:not(:first-of-type) {
     margin-top: 5px;
 }
+.section-container:first-of-type {
+    padding-top: 5px;
+}
     /* This span stlye was added so that the page navigation will stop early so that the 
     sticky header will not cover the section title reference: https://stackoverflow.com/questions/25201608/link-jump-to-id-100px */
 .section-container span {
@@ -118,8 +121,8 @@ header nav a:hover {
 }
 .pers-works-display {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 25px);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 25px);
     grid-gap: 5px;
     width: 100%;
 }
@@ -130,25 +133,40 @@ header nav a:hover {
 .all-work a {
     background-color: var(--tertiary-color);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: left;
     height: 100%;
 }
-.bc-primary-work {
+.project-name {
+    background-color: ghostwhite;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+.big-title, .small-title, .big-code, .small-code {
+    font-family: 'Helvetica', 'Arial Narrow Bold', sans-serif;
+}
+.big-title {
+    font-size: 19px;
+    font-weight: bold;
+}
+.big-code {
+    font-size: 15px;
+}
+.small-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+.small-code {
+    font-size: 10px;
+}
+.primary-work {
     grid-row: 1 / span 6;
     grid-column: 1 / span 12;
 }
-.pers-primary-work {
-    grid-row: 1 / span 4;
-    grid-column: 1 / span 6;
-}
-.bc-other-work {
+.other-work {
     grid-row: span 3;
     grid-column: span 4;
-}
-.pers-other-work {
-    grid-row: span 2;
-    grid-column: span 2;
 }
 .work-1 {
     background-image: url("../images/run-buddy.jpg");
@@ -166,6 +184,24 @@ header nav a:hover {
     background-image: url("../images/amend.png");
     background-size: cover;
 }
+.work-9 {
+    background-image: url("../images/coding.jpg");
+    background-size: cover;
+}
+.work-fut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+.all-work a:active, .all-work:active {
+    transform: scale(.99);
+    box-shadow: unset;
+    background-color: unset;
+}
+
 /* CONTACT ME SECTION */
 .contact-list-grid-wrapper {
     display: flex;

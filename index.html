@@ -3,11 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>dalyd14 Portfolio</title>
 </head>
 <body>
-    <h1>Hello Visitor</h1>
-    <p>Welcome to my portfolio</p>
-    
+    <header>
+        <h1>David Daly</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#bio">Bio</a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="profile-pic">
+            <img src="./assets/images/bio-pic.jpg" alt="Profile picture of David Daly">
+        </div>
+        <div class="coding-hero"></div>
+    </div>
+    <section class="section-container">
+        <!-- This span was added so that the page navigation will stop early so that the 
+        sticky header will not cover the section title reference: https://stackoverflow.com/questions/25201608/link-jump-to-id-100px -->
+        <span id="bio"></span>
+        <div class="section-title">
+            <h2>Bio</h2>
+        </div>
+        <div class="section-content about-me-paragraph">
+            <p>
+                My name is David Daly and I am an aspiring professional full-stack developer. 
+                I am currently attending the UPenn LPS Coding Bootcamp
+            </p>
+            <p>
+                I graduated from Clemson University in 2018 with a Mechanical Engineering degree. 
+                I love all things sports and coding has quickly become my favorite pastime. 
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab blanditiis sit, 
+                tenetur tempora totam dolorum beatae qui neque. Alias tempore esse, et molestias 
+                rem soluta maxime veniam excepturi itaque doloremque!
+            </p>
+        </div>
+
+    </section>
+    <section class="section-container">
+        <!-- This span was added so that the page navigation will stop early so that the 
+        sticky header will not cover the section title reference: https://stackoverflow.com/questions/25201608/link-jump-to-id-100px -->
+        <span id="experience"></span>
+        <div class="section-title">
+            <h2>Experience</h2>
+        </div>
+        <div class="section-content">
+            <h3>Bootcamp Projects</h3>
+            <div class="works-display-wrapper">
+                <div class="bc-works-display">
+                    <div class="all-work primary-work work-1">
+                        <a href="https://dalyd14.github.io/run-buddy/">
+                            <div class="project-name">
+                                <div class="big-title">Run Buddy</div>
+                                <div class="big-code">HTML | CSS</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="all-work other-work work-2">
+                        <a href="https://dalyd14.github.io/horiseon-code-refactor/">
+                            <div class="project-name">
+                                <div class="small-title">Code Refactor</div>
+                                <div class="small-code">HTML | CSS</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="all-work other-work work-fut">
+                        Future Project
+                    </div>
+                    <div class="all-work other-work work-fut">
+                        Future Project
+                    </div>
+                    <div class="all-work other-work work-fut">
+                        Future Project
+                    </div>
+                    <div class="all-work other-work work-fut">
+                        Future Project
+                    </div>
+                </div>
+            </div>
+            <h3>Personal Projects</h3>
+            <div class="works-display-wrapper">
+                <div class="pers-works-display">
+                    <div class="all-work primary-work work-7">
+                        <a href="https://slowpokesports.com">
+                            <div class="project-name">
+                                <div class="big-title">Slowpoke Sports</div>
+                                <div class="big-code">HTML | CSS</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="all-work other-work work-8">
+                        <a >
+                            <div class="project-name">
+                                <div class="small-title">Amend Market</div>
+                                <div class="small-code">HTML | CSS</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="all-work other-work work-9">
+                        <a href="https://github.com/dalyd14">
+                            <div class="project-name">
+                                <div class="small-title">Slowpoke App Code</div>
+                                <div class="small-code">Angular | Python</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <section class="section-container">
+        <!-- This span was added so that the page navigation will stop early so that the 
+        sticky header will not cover the section title reference: https://stackoverflow.com/questions/25201608/link-jump-to-id-100px -->
+        <span id="contact"></span>
+        <div class="section-title">
+            <h2>Contact</h2>
+        </div>
+        <div class="section-content">
+            <div class="contact-list-grid-wrapper">
+                <div class="contact-list-grid-container">
+                    <div class="contact-grid-item">
+                        <a href="tel:+1610-675-8519">
+                            <img src="./assets/images/phone-icon.png" alt="Phone Icon, click to call David">
+                            <div class="contact-text">
+                                (610) 675-8519  
+                            </div>                         
+                        </a>
+                    </div>
+                    <div class="contact-grid-item">
+                        <a href="mailto:dalyd14@gmail.com">
+                            <img src="./assets/images/email-icon.png" alt="Email Icon, click to send David an email">
+                            <div class="contact-text">
+                                dalyd14@gmail.com
+                            </div>                      
+                        </a>                        
+                    </div>
+                    <div class="contact-grid-item">
+                        <a href="https://github.com/dalyd14">
+                            <img src="./assets/images/GitHub-Mark-64px.png" alt="GitHub Icon, click to visit David's GitHub Page">
+                            <div class="contact-text">
+                                GitHub
+                            </div>                       
+                        </a>                        
+                    </div>
+                    <div class="contact-grid-item">
+                        <a href="https://www.linkedin.com/in/david-daly-a627a2b5">
+                            <img src="./assets/images/LI-In-Bug.png" alt="LinkedIn Icon, click to visit David's LinkedIn Page">
+                            <div class="contact-text">
+                                LinkedIn
+                            </div>                         
+                        </a>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
 </body>
 </html>

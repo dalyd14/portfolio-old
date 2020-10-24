@@ -16,4 +16,4 @@ I would like to showcase everything that pertains to me and my goal to become a 
 
 ## Contact
 * Email  - dalyd14@gmail.com
-* GitHub - dalyd14
+* Github - dalyd14

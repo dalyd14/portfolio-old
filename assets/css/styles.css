@@ -16,6 +16,7 @@ a {
     --secondary-color: #2e4140;
     --tertiary-color: rgba(152, 180, 178, 0.6);
     --back-color: #e1e9ee;
+    --profile-pic-size: 150px;
 }
 body {
     background: var(--back-color);
@@ -63,6 +64,24 @@ header nav li:not(:last-of-type) {
 }
 header nav li:active {
     background: var(--tertiary-color);
+}
+/* HERO SECTION */
+.hero {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: var(--profile-pic-size);
+}
+.profile-pic {
+    grid-column: 1 / 2;
+}
+.profile-pic img {
+    height: var(--profile-pic-size);
+}
+.coding-hero {
+    grid-column: 2 / -1;
+    background-image: url("../images/coding.jpg");
+    background-size: cover;
+    background-position: top left;
 }
 /* GENERAL CONTENT SECTION */
 /* This section is used to apply styles to all of the sections in this portfolio */

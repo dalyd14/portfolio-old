@@ -14,7 +14,7 @@ a {
 :root {
     --primary-color: #144013;
     --secondary-color: #2e4140;
-    --tertiary-color: rgba(152, 180, 178, 0.3);
+    --tertiary-color: rgba(152, 180, 178, 0.6);
     --back-color: #e1e9ee;
     --clicked-color: lightgray;
 }
@@ -72,7 +72,7 @@ header nav a:hover {
     background-color: white;
 }
 .section-container:not(:first-of-type) {
-    margin-top: 10px;
+    margin-top: 5px;
 }
     /* This span stlye was added so that the page navigation will stop early so that the 
     sticky header will not cover the section title reference: https://stackoverflow.com/questions/25201608/link-jump-to-id-100px */
@@ -84,11 +84,11 @@ header nav a:hover {
 .section-title {
     color: var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
-    width: 75%;
+    width: 50%;
     text-align: center;
 }
 .section-title h2 {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 100;
 }
 .section-content {
@@ -124,11 +124,15 @@ header nav a:hover {
     width: 100%;
 }
 .all-work{
-    border: 2px solid var(--secondary-color);
-    background: var(--tertiary-color);
+    border: 1px solid var(--clicked-color);
+    box-shadow: 2px 2px 3px lightgrey;
+}
+.all-work a {
+    background-color: var(--tertiary-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 .bc-primary-work {
     grid-row: 1 / span 6;
@@ -148,6 +152,18 @@ header nav a:hover {
 }
 .work-1 {
     background-image: url("../images/run-buddy.jpg");
+    background-size: cover;
+}
+.work-2 {
+    background-image: url("../images/code-refactor.jpg");
+    background-size: cover;
+}
+.work-7 {
+    background-image: url("../images/football.jpg");
+    background-size: cover;
+}
+.work-8 {
+    background-image: url("../images/amend.png");
     background-size: cover;
 }
 /* CONTACT ME SECTION */

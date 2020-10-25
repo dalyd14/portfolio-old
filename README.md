@@ -18,7 +18,7 @@ I would like to showcase everything that pertains to me and my goal to become a 
   * For my portfolio I have decided to develop using a mobile-first approach.
   * I will also create and utilize a develop branch so that I can make changes that will not disturb the published version
   * Towards the beginning of this assignment, I figured a good practice would be to create branches from the develop branch that represent each assignment we have for the portfolio
-  * We were given a mock-up but very little design direction, so I will try to convey my own style and to showcase employers what I am capable of
+  * We were given a mock-up but very little design direction, so I will try to convey my own style while also fulfilling the limitted requirements
 
 ## Contact
 * Email  - dalyd14@gmail.com

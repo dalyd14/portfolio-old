@@ -210,6 +210,9 @@ header nav li:active {
 .work-2 {
     background-image: url("../images/code-refactor.jpg");
 }
+.work-3 {
+    background-image: url("../images/robot-gladiator.png");
+}
 .work-7 {
     background-image: url("../images/football.jpg");
 }

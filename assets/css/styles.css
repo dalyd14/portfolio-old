@@ -208,15 +208,18 @@ header nav li:active {
     grid-column: span 4;
 }
 .work-1 {
-    background-image: url("../images/run-buddy.jpg");
+    background-image: url("../images/taskinator.png");
 }
 .work-2 {
-    background-image: url("../images/code-refactor.jpg");
+    background-image: url("../images/run-buddy.jpg");
 }
 .work-3 {
-    background-image: url("../images/robot-gladiator.png");
+    background-image: url("../images/code-refactor.jpg");
 }
 .work-4 {
+    background-image: url("../images/robot-gladiator.png");
+}
+.work-5 {
     background-image: url("../images/combo-lock.jpg");
 }
 .work-7 {

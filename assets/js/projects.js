@@ -1,6 +1,13 @@
 var bootcamp = [
     {
         big: true,
+        image: './assets/images/taskinator.png',
+        link: 'https://dalyd14.github.io/work-day-scheduler/',
+        title: 'Daily Planner',
+        description: 'jQuery | HTML | CSS'
+    },
+    {
+        big: false,
         image: './assets/images/quiz.jpg',
         link: 'https://dalyd14.github.io/coding-quiz/',
         title: 'Coding Quiz',
@@ -8,23 +15,9 @@ var bootcamp = [
     },
     {
         big: false,
-        image: './assets/images/taskinator.png',
-        link: 'https://dalyd14.github.io/taskinator/',
-        title: 'Taskinator',
-        description: 'Javascript | HTML'
-    },
-    {
-        big: false,
         image: './assets/images/run-buddy.jpg',
         link: 'https://dalyd14.github.io/run-buddy/',
         title: 'Run Buddy',
-        description: 'HTML | CSS'
-    },
-    {
-        big: false,
-        image: './assets/images/code-refactor.jpg',
-        link: 'https://dalyd14.github.io/horiseon-code-refactor/',
-        title: 'Code Refactor',
         description: 'HTML | CSS'
     },
     {

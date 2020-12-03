@@ -1,6 +1,13 @@
 var bootcamp = [
     {
         big: true,
+        image: './assets/images/weather-dashboard.jpg',
+        link: 'https://dalyd14.github.io/weather-dashboard/',
+        title: 'Weather Dashboard',
+        description: 'Server-side APIs | jQuery'
+    },
+    {
+        big: false,
         image: './assets/images/taskinator.png',
         link: 'https://dalyd14.github.io/work-day-scheduler/',
         title: 'Daily Planner',
@@ -42,6 +49,13 @@ var personal = [
         link: 'https://slowpokesports.com',
         title: 'Slowpoke Sports',
         description: 'HTML | CSS'
+    },
+    {
+        big: false,
+        image: './assets/images/veggie-kales.jpeg',
+        link: 'https://veggiekales.com/',
+        title: 'Veggie Kales',
+        description: 'JQuery | HTML | CSS'
     },
     {
         big: false,

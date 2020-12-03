@@ -48,14 +48,14 @@ var personal = [
         image: './assets/images/football.jpg',
         link: 'https://slowpokesports.com',
         title: 'Slowpoke Sports',
-        description: 'HTML | CSS'
+        description: 'Server Side APIs | jQuery | Bootstrap'
     },
     {
         big: false,
         image: './assets/images/veggie-kales.jpeg',
         link: 'https://veggiekales.com/',
         title: 'Veggie Kales',
-        description: 'JQuery | HTML | CSS'
+        description: 'jQuery | Bootstrap'
     },
     {
         big: false,

@@ -1,6 +1,13 @@
 var bootcamp = [
     {
         big: true,
+        image: './assets/images/timeless-movies.png',
+        link: 'https://dalyd14.github.io/movie-timeline/',
+        title: 'Timeless Movies',
+        description: 'Server-side APIs | jQuery'
+    },
+    {
+        big: false,
         image: './assets/images/weather-dashboard.jpg',
         link: 'https://dalyd14.github.io/weather-dashboard/',
         title: 'Weather Dashboard',

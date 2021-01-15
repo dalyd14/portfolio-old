@@ -29,10 +29,10 @@ var bootcamp = [
     },
     {
         big: false,
-        image: './assets/images/run-buddy.jpg',
-        link: 'https://dalyd14.github.io/run-buddy/',
-        title: 'Run Buddy',
-        description: 'HTML | CSS'
+        image: './assets/images/note-taker.png',
+        link: 'https://bootcamp-note-taker-assignment.herokuapp.com/',
+        title: 'Note Taker App',
+        description: 'Node.js | Express.js'
     },
     {
         big: false,

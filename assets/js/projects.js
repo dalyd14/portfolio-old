@@ -53,9 +53,9 @@ var personal = [
     {
         big: true,
         image: './assets/images/football.jpg',
-        link: 'https://slowpokesports.com',
+        link: 'https://slowpoke-sports.herokuapp.com/',
         title: 'Slowpoke Sports',
-        description: 'Server Side APIs | jQuery | Bootstrap'
+        description: 'Server Side APIs | Node.js | jQuery'
     },
     {
         big: false,

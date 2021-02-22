@@ -1,6 +1,13 @@
 var bootcamp = [
     {
         big: true,
+        image: './assets/images/tic-tac-whoa.png',
+        link: 'https://tic-tac-toe-project-two.herokuapp.com/',
+        title: 'Tic-Tac-Whoa',
+        description: 'MySQL | Node.js | Express.js | Handlebars.js | Socket.io'
+    },
+    {
+        big: false,
         image: './assets/images/timeless-movies.png',
         link: 'https://dalyd14.github.io/movie-timeline/',
         title: 'Timeless Movies',
@@ -39,13 +46,6 @@ var bootcamp = [
         image: './assets/images/robot-gladiator.png',
         link: 'https://dalyd14.github.io/robot-gladiators/',
         title: 'Robot Gladiators Game',
-        description: 'Javascript'
-    },
-    {
-        big: false,
-        image: './assets/images/combo-lock.jpg',
-        link: 'https://dalyd14.github.io/password-generator/',
-        title: 'Password Generator',
         description: 'Javascript'
     }
 ]

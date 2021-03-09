@@ -22,10 +22,10 @@ var bootcamp = [
     },
     {
         big: false,
-        image: './assets/images/taskinator.png',
-        link: 'https://dalyd14.github.io/work-day-scheduler/',
-        title: 'Daily Planner',
-        description: 'jQuery | HTML | CSS'
+        image: './assets/images/note-taker.png',
+        link: 'https://bootcamp-note-taker-assignment.herokuapp.com/',
+        title: 'Note Taker App',
+        description: 'Node.js | Express.js'
     },
     {
         big: false,
@@ -36,10 +36,10 @@ var bootcamp = [
     },
     {
         big: false,
-        image: './assets/images/note-taker.png',
-        link: 'https://bootcamp-note-taker-assignment.herokuapp.com/',
-        title: 'Note Taker App',
-        description: 'Node.js | Express.js'
+        image: './assets/images/taskinator.png',
+        link: 'https://dalyd14.github.io/work-day-scheduler/',
+        title: 'Daily Planner',
+        description: 'jQuery | HTML | CSS'
     },
     {
         big: false,
@@ -66,10 +66,10 @@ var personal = [
     },
     {
         big: false,
-        image: './assets/images/amend.png',
-        link: 'https://amendmarket.com',
-        title: 'Amend Market',
-        description: 'HTML | CSS'
+        image: './assets/images/fishhawk.jpg',
+        link: 'https://fishhawkcapital.com/',
+        title: 'FishHawk Capital',
+        description: 'jQuery | Bootstrap | HTML'
     },
     {
         big: false,
